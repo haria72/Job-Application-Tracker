@@ -40,7 +40,7 @@ Built because job hunting felt completely random - this gives you real data on w
 **1. Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/job-tracker-api.git
+git clone https://github.com/haria72/job-tracker-api.git
 cd job-tracker-api
 ```
 
