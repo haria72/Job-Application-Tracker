@@ -32,4 +32,4 @@ class ApplicationResponse(BaseModel):
     notes: Optional[str] = None
 
     class Config:
-        from_attributes = True
+        from_attributes = True #for pydantic to read data from SQLAlchemy model instances and convert them to Pydantic models when returning responses instead of expecting a dict
