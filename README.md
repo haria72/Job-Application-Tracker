@@ -47,9 +47,9 @@ cd job-tracker-api
 **2. Create a `.env` file in the root:**
 
 ```
-DATABASE_URL=postgresql://admin:password@db:5432/jobtracker
-POSTGRES_USER=admin
-POSTGRES_PASSWORD=password
+DATABASE_URL=postgresql://your_user:your_password@db:5432/jobtracker
+POSTGRES_USER=your_user
+POSTGRES_PASSWORD=your_password
 POSTGRES_DB=jobtracker
 ```
 
