@@ -17,8 +17,10 @@ def create_application(app: ApplicationCreate, db: Session = Depends(get_db)):
     return new_app
 
 @router.get("/applications", response_model=List[ApplicationResponse])
-def get_applications(stage: Optional[str] = None, platform: Optional[str] = None, app_type: Optional[str] = None, db: Session = Depends(get_db)):
+def get_applications(company: Optional[str] = None, stage: Optional[str] = None, platform: Optional[str] = None, app_type: Optional[str] = None, db: Session = Depends(get_db)):
     query = db.query(models.Application)
+    if company:
+        query = query.filter(models.Application.company.ilike(f"%{company}%")) #case-insensitive search for company name containing the given string
     if stage:
         query = query.filter(models.Application.stage == stage)
     if platform:
