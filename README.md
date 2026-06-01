@@ -7,24 +7,24 @@ Built because job hunting felt completely random - this gives you real data on w
 
 ## Features
 
-- **Log applications** — track company, role, platform, application type, and stage
-- **Update pipeline stages** — move applications from Applied → Recruiter → Technical → Final → Offer / Rejected
-- **Platform analytics** — see which platform (LinkedIn, Naukri, etc.) gets the most responses
-- **Day-of-week insights** — find out which day you apply on gets the most callbacks
-- **Response time tracking** — average, fastest, and slowest days to hear back
-- **Weekly summary** — full overview of your pipeline at a glance
-- **Visual chart** — bar chart of applications by stage rendered directly in the browser
+- **Log applications** - track company, role, platform, application type, and stage
+- **Update pipeline stages** - move applications from Applied → Recruiter → Technical → Final → Offer / Rejected
+- **Platform analytics** - see which platform (LinkedIn, Naukri, etc.) gets the most responses
+- **Day-of-week insights** - find out which day you apply on gets the most callbacks
+- **Response time tracking** - average, fastest, and slowest days to hear back
+- **Weekly summary** - full overview of your pipeline at a glance
+- **Visual chart** - bar chart of applications by stage rendered directly in the browser
 
 ---
 
 ## Tech Stack
 
-- **FastAPI** — Python web framework for building REST APIs
-- **PostgreSQL** — relational database
-- **SQLAlchemy** — ORM for database interaction
-- **Pandas** — data aggregation for analytics endpoints
-- **Matplotlib** — chart generation
-- **Docker + Docker Compose** — containerised for easy local setup and deployment
+- **FastAPI** - Python web framework for building REST APIs
+- **PostgreSQL** - relational database
+- **SQLAlchemy** - ORM for database interaction
+- **Pandas** - data aggregation for analytics endpoints
+- **Matplotlib** - chart generation
+- **Docker + Docker Compose** - containerised for easy local setup and deployment
 
 ---
 
@@ -167,11 +167,3 @@ job-tracker-api/
 ├── requirements.txt
 └── .env                 # not committed — create locally
 ```
-
----
-
-## Why I Built This
-
-Job hunting felt like shouting into a void. No visibility into what was working, which platforms were worth the effort, or how long to wait before following up.
-
-This API gives real answers - built it for myself, and it's in the testing phase.
